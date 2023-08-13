@@ -1,6 +1,13 @@
 {
   "name": "Anythink Development Container",
   "image": "public.ecr.aws/v0a2l7y2/wilco/anythink-devcontainer:latest",
+  "features": {
+    "githubCodespaces": {
+        "service": [
+            "docker"
+        ]
+    }
+  },
   "forwardPorts": [3000, 3001, 5433, 27017],
   "portsAttributes": {
     "3000": {
